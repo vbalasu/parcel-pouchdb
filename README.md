@@ -4,6 +4,8 @@ Use the following steps to quickly get a PouchDB project up and running
 
 Note that it uses the "json" command line tool to edit package.json inline to add the necessary steps for the ParcelJS bundler. You can install it using `npm install -g json`
 
+The resulting application runs completely on the client side, and can be deployed to a static web server, in this case the following S3 url: https://cloudmatica.s3.amazonaws.com/parcel-pouchdb/index.html
+
 [src/index.html](src/index.html)
 
 [package.json](package.json)
@@ -30,4 +32,3 @@ json -f package.json -I -e 'this.scripts.deploy="aws s3 sync dist s3://cloudmati
 npm run deploy
 # Get the presigned url as follows:
 aws s3 presign s3://cloudmatica/parcel-pouchdb/index.html
-```
