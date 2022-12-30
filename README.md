@@ -2,7 +2,7 @@
 
 Use the following steps to quickly get a PouchDB project up and running
 
-Note that it uses the "json" command line tool to edit package.json inline to add the necessary steps for the ParcelJS bundler
+Note that it uses the "json" command line tool to edit package.json inline to add the necessary steps for the ParcelJS bundler. You can install it using `npm install -g json`
 
 ```
 npm init -y
